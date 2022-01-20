@@ -1,0 +1,32 @@
+.content{
+   box-sizing: border-box;
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: center;
+}
+
+.location-select{
+   
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+    margin: 20px 0;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.example-full-width{
+    margin-top: 20px;
+}
+
+.weather-details{
+    width: 85%;
+    min-height: 400px;
+    background-color: lightgray;
+    padding: 10px;
+}

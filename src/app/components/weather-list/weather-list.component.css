@@ -1,0 +1,8 @@
+.content{
+    display: flex;
+    justify-content: space-evenly;    
+}
+
+.forecast{
+    display: inline-block; 
+}

@@ -1,0 +1,22 @@
+<div class="content">
+    <div class="location-select">
+        <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>type here to get city</mat-label>
+        <input
+        
+         matInput
+        [matAutocomplete]="location"
+    >
+    <!-- <mat-autocomplete #location="matAutocomplete">
+        <mat-option *ngFor="let location of locations" [value]="location.LocalizedName">
+
+        </mat-option>
+
+    </mat-autocomplete> -->
+    </mat-form-field>
+    </div>
+    
+    <div *ngIf="forecasts" class="weather-details">
+        <app-weather-details  [forecasts]="forecasts" [location]="location"  ></app-weather-details>
+    </div>
+</div>

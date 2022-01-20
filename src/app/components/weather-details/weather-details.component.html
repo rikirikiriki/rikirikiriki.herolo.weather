@@ -1,0 +1,29 @@
+<div class="content">
+    
+    <div class="top-container">
+        <div class="info">
+            <div class="city">{{city}}</div>
+            <div class="temperature">{{todayWeather.Temperature.Value}}&deg;{{todayWeather.Temperature.Unit}} </div>
+        </div>
+        <div class="favorite">
+            <div class="favorite-content-container">
+                <div class="icon">
+                    <span  [ngClass]="{'heart': this.location.Favorite}">&#x2764;</span>
+                </div>
+                <div class="add">            
+                    <button id="favoriteButton" (click)="changeFavorite()" >Add To Favorite</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="center-container">
+        <div class="weather-description">
+            <h2 class="description">{{todayWeather.Description}}</h2>
+        </div>
+    </div>
+    <div class="bottom-container">
+        <div class="forecast-list">
+          <app-weather-list [forecasts]="forecasts"></app-weather-list>  
+        </div>
+    </div>
+</div>

@@ -1,0 +1,9 @@
+<div class="content weather-item"  (click)="forecastSelected($event)">
+    <mat-card class="card">
+        <mat-card-title class="title">{{getDay(forecast.Date)}}</mat-card-title>
+        <mat-card-content>
+            <p>{{forecast.Temperature.Value}}&deg;{{ forecast.Temperature.Unit}}</p>
+        </mat-card-content>
+    </mat-card>
+    
+</div>
